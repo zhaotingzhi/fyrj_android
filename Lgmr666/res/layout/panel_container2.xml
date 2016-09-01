@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/surfaceview"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txtlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="显示"
+            android:textColor="#4876FF"
+            android:textSize="16sp" />
+
+        
+       <RelativeLayout 
+            android:id="@+id/sort_layout"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/txtlayout"
+            android:gravity="center"
+            >
+             
+        <ImageView
+            android:id="@+id/txtspot"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/spot" />
+
+        <TextView
+            android:id="@+id/sort"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/txtspot"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="排序"
+            android:textSize="16sp" />
+            
+            
+           </RelativeLayout>
+       
+      
+         <RelativeLayout 
+            android:id="@+id/filers_layout"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/sort_layout"
+            android:gravity="center"
+            >
+       
+
+        <ImageView
+            android:id="@+id/tetfiter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true" 
+            android:src="@drawable/fiterimage" />
+
+        <TextView
+            android:id="@+id/filers"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tetfiter"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="筛选"
+            android:textSize="16sp" />
+       </RelativeLayout>
+
+         
+         
+         <RelativeLayout 
+            android:id="@+id/suo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/filers_layout"
+            android:gravity="center"
+            >
+         
+         
+        <ImageView
+            android:id="@+id/suo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_search_category_default"/>
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/suo"
+            android:layout_toRightOf="@+id/suo"
+               android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0 points"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/export"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:src="@drawable/export" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <com.tianhedaoyun.lgmr.view.XListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tou"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+  <RelativeLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:src="@drawable/logoh" />
+
+    </RelativeLayout>  
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/table"
+        android:background="@color/line" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:src="@drawable/about" />
+
+    <TextView
+        android:id="@+id/textView333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="30dp"
+        android:text="       “道”寓意万物本原、自然规律、社会法则，“云”寓意生命之源自然循环的有形结果。取名“道云”，则意味着公司要尊崇本原、尊重规律、遵守法则。公司与“天河”国家超级计算中心的战略合作，又为长期发展奠定基础，为未来腾飞提供动力。"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:src="@android:drawable/sym_action_call" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView333"
+        android:layout_alignRight="@+id/textView333"
+        android:layout_below="@+id/textView333"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="      天河道云（北京）科技有限公司坐落于有中国硅谷之称的北京上地高新科技园区，公司秉承“开放自主，合作共赢”的经营理念，以“为行业培养实用人才、为用户提供超值产品、为企业提供整装服务”为公司使命，以成为“智慧基础设施技术服务领导者”为公司愿景。" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="      公司专注于先进测绘仪器在BIM领域的应用，始终关注激光扫描、移动测量、移动GIS等前沿技术的最新发展，并与“天河建筑云”协同平台实现数据无缝衔接，是新兴的空间数据采集与应用整体解决方案供应商。公司着眼于高新技术，紧跟世界最新测绘科技，敏锐地捕捉商机，顽强地开拓市场，用我们的勇气和诚信，成功地将产品和服务应用于地质矿产、电力、水利水电、轨道交通、环保、石油化工、房地产、市政工程、科研院校等多个行业，赢得了国内客户和国外厂家的信任与尊重。" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="      立足高科技，创造新生活！我们希望公司成为所有员工快乐工作、快乐生活、快乐创业的人生平台，也希望为国家创建和谐社会做出我们应有的贡献！" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:text="联系我们：010-89029018"
+        android:textSize="20sp" />
+
+</RelativeLayout>

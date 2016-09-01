@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回" 
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="存储设置" 
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line" />   
+     
+      
+      <RelativeLayout
+          android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:id="@+id/instrument"
+          android:gravity="center_vertical"
+          android:layout_marginTop="20dp"
+          android:background="@drawable/settingtextbook_top" >
+
+       <TextView
+           android:id="@+id/textView6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"
+           android:text="删除未使用的模型" 
+           android:textSize="16sp" />
+
+
+       <Spinner
+           android:id="@+id/spinnerstorage"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/settingtextbook_top"
+           android:gravity="center"
+           android:layout_marginRight="45dp"/>
+       <ImageView
+           android:id="@+id/imageView6"
+            android:layout_width="20dp"
+             android:layout_height="20dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="25dp"
+           android:src="@drawable/going" />
+       
+     </RelativeLayout>     
+      
+      
+      
+      <RelativeLayout
+          android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:id="@+id/embedded"
+          android:gravity="center_vertical"
+          android:background="@drawable/settingtextbook_top" >
+
+       <TextView
+           android:id="@+id/textView18"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"
+           android:text="Embedded properties" 
+           android:textSize="16sp" />
+
+       <ImageView
+           android:id="@+id/imageViewembedded"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/font_color_open" 
+           android:layout_marginRight="25dp"/>
+       
+     </RelativeLayout>      
+      
+
+    
+
+</LinearLayout>

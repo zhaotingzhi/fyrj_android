@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resetion_set_done"
+    android:layout_width="370dp"
+    android:layout_height="380dp"
+    android:layout_alignBottom="@+id/bottom"
+    android:layout_alignParentRight="true"
+    android:background="@android:color/black" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="上一步"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/back"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:text="后方交会设置"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/view10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@color/black"
+        android:text="确认"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/res_pointNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_pointNum1"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/res_pointNum1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_x1"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/res_x1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_z1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_y1"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/res_y1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_pointNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/res_pointNum1"
+        android:layout_below="@+id/res_pointNum1"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_pointNum2"
+        android:layout_alignRight="@+id/res_x1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_y2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_x2"
+        android:layout_alignRight="@+id/res_y1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_z2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/res_y2"
+        android:layout_alignLeft="@+id/res_z1"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="第三点坐标"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/res_pointNum2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_y3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/res_x3"
+        android:layout_alignBottom="@+id/res_x3"
+        android:layout_marginLeft="120dp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/res_z3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/res_y3"
+        android:layout_alignBottom="@+id/res_y3"
+        android:layout_marginLeft="210dp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

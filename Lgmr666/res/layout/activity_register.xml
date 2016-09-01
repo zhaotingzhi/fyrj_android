@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/main_home">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/logoh" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="天河道云"
+        android:textSize="35sp" 
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="74dp"
+        android:text="注册"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:text="已经有一个账户？"
+        android:textSize="20sp"  />
+
+    <TextView
+        android:id="@+id/rsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="登录" 
+        android:textSize="20sp" 
+        android:textColor="#87CEFF"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="127dp"
+        android:background="@drawable/textbook_top"
+        android:textSize="16sp"
+        android:textColor="#4d606f"
+        android:hint="名字" 
+         android:paddingLeft="8dp"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_alignRight="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbook_top"
+        android:textColor="#4d606f"
+        android:hint="姓氏"
+         android:paddingLeft="8dp"
+      />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_alignLeft="@+id/surname"
+        android:layout_alignRight="@+id/surname"
+        android:layout_below="@+id/surname"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress" 
+        android:background="@drawable/textbook_top"
+        android:textColor="#4d606f"
+         android:paddingLeft="8dp"
+        android:hint="电子邮件地址"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignRight="@+id/email"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:background="@drawable/textbook_top"
+        android:textColor="#4d606f"
+         android:paddingLeft="8dp"
+        android:hint="密码"/>
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:background="@drawable/textbook_top"
+        android:textColor="#4d606f"
+         android:paddingLeft="8dp"
+        android:hint="确认密码"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password1"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="10dp"
+        android:text="我愿意接受来自天河道云的电子邮件通信，包括有关产品和特性促销的信息。" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="10dp"
+        android:text="我同意" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox2"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:text="天河道云隐私声明。"
+        android:textColor="#87CEFF" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignRight="@+id/password1"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginTop="20dp"
+        android:text="注册" 
+        android:background="@drawable/sinin_but"/>
+
+</RelativeLayout>

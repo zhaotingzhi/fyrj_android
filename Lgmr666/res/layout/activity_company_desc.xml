@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="• 立足高科技，创造新生活！我们希望公司成为所有员工快乐工作、快乐生活、快乐创业的人生平台，也希望为国家创建和谐社会做出我们应有的贡献！"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="• 天河道云（北京）科技有限公司坐落于有中国硅谷之称的北京上地高新科技园区，公司秉承“开放自主，合作共赢”的经营理念，以“为行业培养实用人才、为用户提供超值产品、为企业提供整装服务”为公司使命，以成为“智慧基础设施技术服务领导者”为公司愿景。"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bim" />
+
+</RelativeLayout>

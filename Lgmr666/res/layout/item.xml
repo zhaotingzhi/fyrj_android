@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+     >
+
+    <Button
+        android:id="@+id/btgo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/bt"
+        android:background="@android:drawable/ic_menu_share"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/ic_menu_delete"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+         android:visibility="gone"
+         />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

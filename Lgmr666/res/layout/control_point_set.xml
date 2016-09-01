@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connect1"
+    android:layout_width="370dp"
+    android:layout_height="380dp"
+    android:layout_alignBottom="@+id/bottom"
+    android:layout_alignParentRight="true"
+    android:background="@android:color/black" >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="上一步"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/back"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:text="后视设置"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/view10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@color/black"
+        android:text="下一步"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back"
+        android:layout_alignRight="@+id/next"
+        android:layout_below="@+id/view10"
+        android:layout_marginTop="54dp"
+        android:text="从列表或模型中选择一个控制点，然后设置机器人在这个点上"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_below="@+id/textView27"
+        android:src="@drawable/control_set" />
+
+</RelativeLayout>

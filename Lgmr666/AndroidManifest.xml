@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tianhedaoyun.lgmr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+     
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     待机
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 允许一个程序访问精良位置(如GPS) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 访问摄像头的权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许改变wifi状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许装备或解除可移除的存储仓库的文件系统 -->
+    <permission android:name="android.permission.WRITE_MEDIA_STORAGE" >
+    </permission>
+    <!-- 读写外部存储卡的权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" >
+    </uses-permission>
+    <!-- 允许程序重新启动其他程序 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 往SDCard写入数据权限 -->
+   <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission> 
+   <!--在sdcard中创建/删除文件的权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:name="com.tianhedaoyun.lgmr.common.MyApp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.AtyLogin"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.AtyRegister"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.AtySetting"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.RegisterPwd"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.SamplesMain"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.Storage"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.ViewMain"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tianhedaoyun.lgmr.activity.ModelMain"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:name="com.tianhedaoyun.lgmr.activity.About"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <service
+            android:name="com.tianhedaoyun.lgmr.service.WifiService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.tianhedaoyun.lgmr.service.WIFI_ACTION" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
